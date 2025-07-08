@@ -15,4 +15,21 @@ This is a simple **Library Management System** implemented in C++ using **Object
   - facultyMember: pays an additional faculty fee.
 - Calculates and displays individual membership fees.
 - Demonstrates proper use of **virtual destructors** for safe memory cleanup.
+
+
+**Classes Overview**
+- **libraryMember (Abstract Class)**
+- Attributes: memberId, memberName, memberFee
+- Pure virtual functions:
+- calculateMemberFee()
+- displayDetails()
+- Virtual destructor to ensure proper cleanup
+
+**studentMember (Derived Class)**
+- Additional attributes: baseFee, discount
+- Calculates fee after applying student discount
+
+**facultyMember (Derived Class)**
+- Additional attributes: baseFee, facultyFee
+- Calculates fee by adding additional faculty charges
   
